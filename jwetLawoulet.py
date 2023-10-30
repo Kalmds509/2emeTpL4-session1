@@ -25,7 +25,7 @@ else:
     sko = 0
 while True:
     nonb_aleyatwa = randrange(1, 10)
-    print(nonb_aleyatwa)
+    #print(nonb_aleyatwa)
     chans = 3
     while chans > 0:
         chwa_itilizate = input(f"Hello {epsedo}, kounya chwazi yon nonb ant 1 a 10: ")
