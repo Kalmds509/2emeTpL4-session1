@@ -1,7 +1,7 @@
 from random import randrange
 import pickle
 import os
-# Essayer de charger le dictionnaire depuis le fichier s'il existe
+# Eseye chaje done nan fichye an si li ekziste
 if os.path.exists("scores.txt"):
     with open("scores.txt", "r") as file:
         scores_data = file.read()
@@ -18,9 +18,9 @@ else:
 epsedo = input("Antre epsedo ou pou ka komanse jwet la : ")
 while not epsedo.islower() or " " in epsedo:
     epsedo = input("ERROR li pa korek: ")
-# Vérifier si le joueur existe dans le dictionnaire
+# verifye si jwe a nan diksyone a deja
 if epsedo in scores_dict:
-    sko = scores_dict[epsedo]  # Récupérer le score précédent
+    sko = scores_dict[epsedo]  # rekipere anyen sko a
 else:
     sko = 0
 while True:
@@ -52,9 +52,9 @@ while True:
     avi = input("Press 'k' to stop the game, or any other key to continue: ")
     if avi.lower() == "k":
         break
-# Mettre à jour le dictionnaire avec le pseudonyme et le score
+# update diksyone a,epsedo ak sko
 scores_dict[epsedo] = sko
-# Enregistrez le dictionnaire mis à jour dans le fichier au format CSV
+# Anrejistreman diksyone a an mod csv
 with open("scores.txt", "w") as file:
     for pseudo, score in scores_dict.items():
         file.write(f"{pseudo},{score}\n")
